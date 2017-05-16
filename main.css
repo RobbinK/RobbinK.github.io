@@ -10,6 +10,6 @@ p {
   color: #DBDBD9
 }
 
-ul li {
-  text-decoration: none;
+ul {
+  list-style-type: none;
 }
