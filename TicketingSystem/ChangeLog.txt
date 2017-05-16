@@ -1,0 +1,80 @@
+
+
+______ VERSION 1.4 _____
+01)  Nov 23, 2012	>>	Captcha Code added
+02)  Nov 23, 2012	>>	Mobile design improvements, you can now easily support your customers wherever you are right from your smart phone or tablet device
+03)  Nov 25, 2012	>>	User Friendly date format
+04)  Nov 25, 2012	>>	View all of the tickets history
+05)  Nov 27, 2012	>>	Reopen option added for all of the tickets
+06)  Nov 27, 2012	>>	Close any ticket immediately
+07)  Nov 27, 2012	>>	Organized tickets based on their priority and status
+08)  Mar 24, 2013	>>	fixed the design bug in TickeySystem/admin/users.php and a minor bug in TickeySystem/admin/tickets.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NitroGFX.COM - Download Unique Web Templates
