@@ -1,13 +1,13 @@
 <?php
-define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "databasepass");
-define("DB_NAME", "databasename");
+define("DB_HOST", "167.114.58.108");
+define("DB_USER", "robbinkm_TS");
+define("DB_PASS", "Kourie5048812");
+define("DB_NAME", "robbinkm_Ticketing_System");
 
 //First page edit
 
-define("SITE_TITLE", "Your site title");
-define("DESCRIPTION_TITLE", "Description title part...");
-define("DESCRIPTION", "Description part...");
-define("FOOTER", "© Your footer text");
+define("SITE_TITLE", "CoreHQ Support");
+define("DESCRIPTION_TITLE", "This is an Example Support Site");
+define("DESCRIPTION", "More infor here! :D");
+define("FOOTER", "RobbinK Â© 2017 all rights reserved.");
 ?>
