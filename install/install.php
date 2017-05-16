@@ -12,7 +12,6 @@ $('#myModal').modal({
 	  keyboard: false
 	});
 $('#myModal').modal('show');
-	ini_set("include_path", '/home/robbinkm/php:' . ini_get("include_path") );
 </script>
 
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
