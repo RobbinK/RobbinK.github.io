@@ -1,4 +1,7 @@
 <?php
+ini_set("include_path", '/home/robbinkm/php:' . ini_get("include_path") );
+?>
+<?php
 include 'admin/userLogin.php';
 include 'html_config.php';
 if ($isLogin)
