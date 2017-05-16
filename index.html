@@ -22,24 +22,17 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
-<!--Navbar-->
-<nav class="navbar fixed-top navbar-toggleable-md scrolling-navbar navbar-dark bg-primary">
+<!--Navigation-->
+<nav class="navbar fixed-top navbar-toggleable-md navbar-dark scrolling-navbar mdb-color lighten-3">
     <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <strong>Navbar</strong>
+            <img src="http://mdbootstrap.com/img/logo/mdb-transparent-sm-shadows.png" class="d-inline-block align-top" alt="MDBootstrap">
         </a>
-        <div class="collapse navbar-collapse" id="navbarNav1">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link">Home <span class="sr-only">(current)</span></a>
@@ -50,7 +43,7 @@
                 <li class="nav-item">
                     <a class="nav-link">Pricing</a>
                 </li>
-                <li class="nav-item btn-group dropdown">
+                <li class="nav-item btn-group">
                     <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <a class="dropdown-item">Action</a>
@@ -59,10 +52,34 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline waves-effect waves-light">
-                <input class="form-control" type="text" placeholder="Search">
-            </form>
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>
-<!--/.Navbar-->
+<!--/.Navigation-->
+<!-- Main -->
+<main class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h2>This Navbar is fixed</h2>
+                <h5>It will always stay visible on the top, even when you scroll down</h5>
+                <br>
+                <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+                <div style="height:2000px;"></div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- /.Main -->
+
