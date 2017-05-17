@@ -56,12 +56,14 @@ p {
   height: 50px;
   float: left;
   margin-right: 0.3em;
+  text-align: center;
 }
 b {
   float: left;
   overflow: hidden;
   position: relative;
   height: 50px;
+  text-align: center;
 }
 span1 {
  display: inline-block;
