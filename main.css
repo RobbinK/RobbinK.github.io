@@ -24,10 +24,13 @@ Main | Top Nav
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
+}
+    ul {
+  list-style-type: none;
+}
   /********************
 Colors
 *********************/
-}
 h1 {
   color: #8AC6D0; 
 }
@@ -39,7 +42,10 @@ h2 {
 p {
   color: #DBDBD9
 }
-
-ul {
-  list-style-type: none;
+  /********************
+Footer
+*********************/
+footer {
+text-align: center;
 }
+
