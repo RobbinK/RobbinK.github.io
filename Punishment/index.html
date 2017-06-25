@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Punishment</title
+</head>
+<h1>Punishment Calculator</h1>
+<script type="text/javascript">
+	var Offense = prompt("Type of Offense? (enter Chat, Game, or Client)");
+var Sev = prompt("What's the Severity? (1, 2 or 3)");
+var Past = prompt("Any past severity (same severity and offense)");
+if (Offense == "Chat" && (Sev == "1" && (Past == "0"))) {
+	document.write("Give the Player a warning");
+}
+if (Offense == "Chat" && Sev == "1" && Past == "1") {
+	document.write("Mute for 24 hours because the player has more than 1 past Sev 1 offense");
+}
+if (Offense == "Chat" && Sev == "1" && Past == "2") {
+	document.write("Mute for 7 days because the player has more than 1 past Sev 1 offense");
+}
+if (Offense == "Chat" && Sev == "1" && Past == "3") {
+	document.write("Perm Mute because he/she was already given 3 warnings.");
+}
+</script>
+</body>
+</html>
