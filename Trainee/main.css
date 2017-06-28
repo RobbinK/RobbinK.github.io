@@ -25,10 +25,11 @@
     height: auto;
   }
   .jumbotron {
-      background-color: #f4511e;
+      background-image: url(img/background2.jpg);
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
+      background-repeat: no-repeat;
   }
   .container-fluid {
       padding: 60px 50px;
