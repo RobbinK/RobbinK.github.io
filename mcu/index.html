@@ -9,21 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mineplex | MCU</title>
+    <title>Mineplex - MCU</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,241 +31,132 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Mineplex | MCU</a>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i> <span class="light">Mineplex</span> MCU
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">History</a>
+                        <a class="page-scroll" href="#goals">Our Goals</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Events</a>
+                        <a class="page-scroll" href="#teams">Sub-Teams</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Discord</a>
+                        <a class="page-scroll" href="#events">Events</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Mineplex Community Uniters</h1>
-                <hr>
-                <p>Join our <a href="https://discord.gg/BHeNA6w">Discord</a></p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Learn More!</a>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">MCU</h1>
+                        <h3 class="intro-text">Mineplex Community Uniters</h3>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h1 class="section-heading">Our Goals</h1>
-                    <hr class="light">
-                    <h2 class="section-heading">Bring more interaction within the MCU/Mineplex community.</h2>
-                    <hr class="light">
-                    <p class="text-faded">We strive to improve and form communication within the Mineplex community. We encourage members to participate in events, and talk to people to hopefully make new friends. Since the very beginning of this team, our goal has been to form a family-like bond between the diversity of Mineplex.</p>
-                    <h2 class="section-heading">Unite the community.</h2>
-                    <hr class="light">
-                    <p class="text-faded">Working to eliminate disconnection between the MCU community, Mineplex community, and the Mineplex staff team has been a goal we try to achieve on a daily basis. We want to provide a safe and positive space for all players across all platforms. We hold public events, post threads, speak through our MCU staff members to the staff team, compete in competitive events, and interact in the Mineplex Community Council (MCC) on a regular basis to help achieve this goal.</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Apply Today!</a>
+    <!-- About Section -->
+    <section id="goals" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Our Goals</h2>
+                <h3>Bring more interaction within the MCU/Mineplex community.</h3>
+                <p>
+                    We strive to improve and form communication within the Mineplex community. We encourage members to participate in events, and talk to people to hopefully make new friends. Since the very beginning of this team, our goal has been to form a family-like bond between the diversity of Mineplex.
+                </p>
+                <h3>Unite the community.</h3>
+                <p>
+                    Working to eliminate disconnection between the MCU community, Mineplex community, and the Mineplex staff team has been a goal we try to achieve on a daily basis. We want to provide a safe and positive space for all players across all platforms. We hold public events, post threads, speak through our MCU staff members to the staff team, compete in competitive events, and interact in the Mineplex Community Council (MCC) on a regular basis to help achieve this goal.
+                </p>
+                <p>Apply for membership today!</p>
+            </div>
+        </div>
+        <saside id="useful links" class="container content-section text-center">
+        <h2>Useful Links</h2>
+            <h3>
+                <ul class="list-unstyled" class="useful-links">
+                    <a href="https://docs.google.com/document/d/1pWuwalfuraBBrnyKBl2p2F5fYBl-B0kiN5SiXakzcM8/edit?usp=sharing"><li>Rules</li></a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLxodKr05b9jfdaESsGJCxjZPthWjOpJk1Dv1sqFgwG3TqDg/viewform#response=ACYDBNj5JRwztzyCamdZDi1y7sJySuqqVFcfco8wdRuIseYMYx_U7N0U_4Q88DQ"><li>Reinstatment</li></a>
+                    <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.mineplex.com%2Fforums%2Fm%2F11929946%2Fviewthread%2F30044818-mineplex-community-uniters%2Fpage%2F1&sa=D&sntz=1&usg=AFQjCNG5EO5SSA7jhIXpbzha645XbhrFjg"><li>Thread</li></a>
+                </ul>
+            </h3>
+        </saside>
+    </section>
+
+    <!-- Teams Section -->
+    <section id="teams" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Sub-Teams</h2>
+                    <p>You can view all our sub-teams along with instructions on applying for each one using the link below</p>
+                    <a href="https://sites.google.com/view/mcuniters/sub-teams?authuser=0" class="btn btn-default btn-lg">View Sub-Teams</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Useful Links</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                       <a href="https://docs.google.com/document/d/1pWuwalfuraBBrnyKBl2p2F5fYBl-B0kiN5SiXakzcM8/edit?usp=sharing"><h3>Rule Book</h3></a> 
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLxodKr05b9jfdaESsGJCxjZPthWjOpJk1Dv1sqFgwG3TqDg/viewform#response=ACYDBNj5JRwztzyCamdZDi1y7sJySuqqVFcfco8wdRuIseYMYx_U7N0U_4Q88DQ"><h3>Reinstatment</h3></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <a href="http://www.mineplex.com/forums/m/11929946/viewthread/30044818-mineplex-community-uniters/page/1"><h3>Thread</h3></a>
-                    </div>
-                </div>
+    <!-- Events Section -->
+    <section id="events" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Events</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6mq9nsdrljhuhglunipe6v28u4%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FEdmonton" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <aside class="bg-dark">
+    <!-- Footer -->
+    <footer>
         <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
-            </div>
+            <p>Copyright &copy; RobbinK 2017</p>
         </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/grayscale.min.js"></script>
 
 </body>
 
