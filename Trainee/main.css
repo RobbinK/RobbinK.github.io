@@ -17,6 +17,13 @@
       font-weight: 400;
       margin-bottom: 30px;
   }  
+  .contact {
+    text-align: center;
+  }
+  .profile_pic img {
+    width: 100%;
+    height: auto;
+  }
   .jumbotron {
       background-color: #f4511e;
       color: #fff;
