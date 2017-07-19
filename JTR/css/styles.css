@@ -1,14 +1,35 @@
+html {
+    background-color: #fff;
+}
 body {
-	background-color: white;
+    background-color: #f2f2f2;
+    padding: 24px;
 }
- 
-.container {
-	margin:0 auto;
-	width:960px;
-	font-size: 100%;
-	line-height: 1.5;
+.center {
+    text-align: center;
 }
+h1,
+h2,
+h3,
+p,
 li {
-	display: inline-block;
-	margin: 2px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 12px 0;
+    color: #777;
+}
+.container {
+    background-color: #fff;
+    width: 960px;
+    margin-bottom: 24px;
+    padding: 24px;
+    display: inline-block;
+}
+nav ul li {
+    float: left;
+    margin: 12px;
+    padding: 12px 0px;
+    width: 216px;
+    background-color: rgb(209, 209, 209);
 }
