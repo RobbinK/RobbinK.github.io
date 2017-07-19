@@ -58,3 +58,7 @@ nav ul li {
     width: 224px;
     height: 250px;
 }
+.footer img {
+    width: 7.5%;
+    padding: 0 5px;
+}
