@@ -33,3 +33,28 @@ nav ul li {
     width: 216px;
     background-color: rgb(209, 209, 209);
 }
+.stopic1,
+.stopic2,
+.topic1,
+.topic2 {
+    padding: 24px;
+    background-color: rgb(209, 209, 209);
+    margin: 24px;
+}
+.topic1 {
+    float: left;
+    width: 384px;
+    height: 400px;
+}
+.footer {
+    background-color: rgb(209, 209, 209);
+    width: 912px;
+}
+.stopic2 {
+    height: 400px;
+}
+.topic2 {
+    float: left;
+    width: 224px;
+    height: 250px;
+}
