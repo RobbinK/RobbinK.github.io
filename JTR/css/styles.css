@@ -49,6 +49,7 @@ nav ul li {
 .footer {
     background-color: rgb(209, 209, 209);
     width: 912px;
+    opacity: 8%;
 }
 .stopic2 {
     height: 400px;
@@ -61,4 +62,8 @@ nav ul li {
 .footer img {
     width: 7.5%;
     padding: 0 5px;
+}
+.footer p {
+    font-size: 12px;
+    margin: 0
 }
