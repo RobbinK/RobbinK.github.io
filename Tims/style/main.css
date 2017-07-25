@@ -78,10 +78,7 @@ ul li {
   }
   .logout {
   	float: right;
-  	background-color: currentColor;
-  }
-  .logout:hover {
-  	background-color: currentColor;
+    width: 12px;
   }
  
   /* Option 1 - Display Inline */
