@@ -122,7 +122,7 @@
 
 			ul.contact li a {
 				opacity: 0.35;
-				color: #fff;
+				color: #a8201a;
 				-moz-transition: opacity 0.25s ease-in-out;
 				-webkit-transition: opacity 0.25s ease-in-out;
 				-ms-transition: opacity 0.25s ease-in-out;
@@ -194,7 +194,6 @@
 
 	#header {
 		position: relative;
-		background: #031926 url("images/overlay.png");
 		color: #fff;
 		cursor: default;
 	}
@@ -342,8 +341,8 @@
 					display: inline-block;
 					margin-left: 1em;
 					padding-left: 1em;
-					border-left: solid 1px #333;
-					border-left-color: rgba(255, 255, 255, 0.25);
+					border-left: solid 1px #a8201a;
+					border-left-color: #a8201a;
 					line-height: 1em;
 				}
 
@@ -456,8 +455,12 @@
 					.poptrox-popup .closer:before {
 						content: "\00d7";
 					}
+					p {
+						color: #a8201a
+					}
 
 	}
+
 
 /* Mobile */
 
