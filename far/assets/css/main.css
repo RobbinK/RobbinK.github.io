@@ -89,7 +89,7 @@
 	}
 
 		a:hover {
-			color: #d64760;
+			color: #77ACA2;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -194,7 +194,7 @@
 
 	#header {
 		position: relative;
-		background: #d64760 url("images/overlay.png");
+		background: #031926 url("images/overlay.png");
 		color: #fff;
 		cursor: default;
 	}
@@ -214,10 +214,11 @@
 			}
 
 			body {
-				background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-				background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-				background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-				background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#468189+0,031926+50&0.85+0,0+100 */
+				background: -moz-linear-gradient(top, rgba(70,129,137,0.85) 0%, rgba(3,25,38,0.43) 50%, rgba(3,25,38,0) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(70,129,137,0.85) 0%,rgba(3,25,38,0.43) 50%,rgba(3,25,38,0) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, rgba(70,129,137,0.85) 0%,rgba(3,25,38,0.43) 50%,rgba(3,25,38,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9468189', endColorstr='#00031926',GradientType=0 ); /* IE6-9 */
 				background-position: top left, bottom left, auto;
 				background-size: auto, 100% 100%, cover;
 				background-repeat: repeat, no-repeat, auto;
