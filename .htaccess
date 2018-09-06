@@ -1,0 +1,94 @@
+Options -MultiViews
+RewriteCond %{QUERY_STRING} (\|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} .*proc/self/environ.* [NC,OR]
+RewriteCond %{QUERY_STRING} .*union\+select.* [NC,OR]
+RewriteCond %{QUERY_STRING} .*SQL.* [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule ^(.*)$ index.php [F,L]
+
+#
+# If your site is in a folder (site.com/site/) change RewriteBase
+# ex: RewriteBase /site/
+#
+
+RewriteEngine On 
+RewriteBase /
+
+RewriteRule ^g/([a-zA-Z0-9-]*)$ game.php?id=$1 [L]
+RewriteRule ^play/([0-9]+)/$ play.php?id=$1 [L]
+RewriteRule ^tag/(.*)/([0-9]+)$ tag.php?id=$1&p=$2 [L]
+RewriteRule ^tag/(.*)$ tag.php?id=$1 [L]
+RewriteRule ^sitesearch/(.*)/([0-9]+)$ sitesearch.php?id=$1&p=$2 [L]
+RewriteRule ^sitesearch/(.*)$ sitesearch.php?id=$1 [L]
+RewriteRule ^user-search/$ usersearch.php [L]
+RewriteRule ^page/popular/([0-9]+)$ games.php?s=popular&p=$1 [L]
+RewriteRule ^page/recent/([0-9]+)$ games.php?s=new&p=$1 [L]
+RewriteRule ^page/recent games.php?s=new [L]
+RewriteRule ^page/popular games.php?s=popular [L]
+RewriteRule ^awards$ awards.php [L]
+RewriteRule ^awards/([a-zA-Z]+)$ awards.php?page=$1 [L]
+RewriteRule ^awards/([a-zA-Z]+)/([0-9]+)$ awards.php?page=$1&p=$2 [L]
+RewriteRule ^([a-zA-Z0-9-]*)/scores$ scores.php?id=$1 [L]
+RewriteRule ^edit/([a-zA-Z]+)$ edit.php?page=$1 [L]
+RewriteRule ^help/([a-zA-Z]+)/$ help.php?page=$1 [L]
+RewriteRule ^help/([a-zA-Z]+)/([a-zA-Z]+)/([a-zA-Z0-9]+)$ help.php?page=$1&key=$2&email=$3 [L]
+RewriteRule ^contact$ contact.php [L]
+RewriteRule ^privacy$ privacy.php [L]
+RewriteRule ^search/$ search.php [L]
+RewriteRule ^contact$ contact.php [L]
+RewriteRule ^login$ login.php [L]
+RewriteRule ^signup$ signup.php [L]
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^profile/([0-9]+)$ profile.php?uid=$1 [L]
+RewriteRule ^profile_more/([a-zA-Z]+)/([0-9]+)$ profile_more.php?page=$1&uid=$2 [L]
+RewriteRule ^sitemap.txt$ sitemap.php [L]
+RewriteRule ^top$ top.php [L]
+RewriteRule ^welcome$ welcome.php [L]
+RewriteRule ^welcome/([0-9]+)$ welcome.php?page=$1 [L]
+RewriteRule ^menu$ menu.php [L]
+RewriteRule ^resend$ resend.php [L]
+RewriteRule ^invite$ invite.php [L]
+
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 0 seconds"
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/xml "access plus 0 seconds"
+ExpiresByType text/xml "access plus 0 seconds"
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType application/rss+xml "access plus 1 hour"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+
+# Set Cache-Control and Expires headers
+<filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3|mp4)$">
+Header set Cache-Control "max-age=2592000, private"
+</filesMatch>
+<filesMatch "\\.(css|css.gz)$">
+Header set Cache-Control "max-age=604800, private"
+</filesMatch>
+<filesMatch "\\.(js|js.gz)$">
+Header set Cache-Control "max-age=604800, private"
+</filesMatch>
+<filesMatch "\\.(xml|txt)$">
+Header set Cache-Control "max-age=216000, private, must-revalidate"
+</filesMatch>
+<filesMatch "\\.(html|htm)$">
+Header set Cache-Control "max-age=7200, private, must-revalidate"
+</filesMatch>
+
+#Gzip
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+#End Gzip
