@@ -1,0 +1,7 @@
+.limit-hint{
+    display:none;
+}
+.limit-hint span{
+    color:gray;
+    font-size:11px;
+}

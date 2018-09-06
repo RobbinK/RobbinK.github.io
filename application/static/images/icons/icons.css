@@ -1,0 +1,31 @@
+.icons-container{
+    position: relative; 
+    width: 1px;
+    height: 20px;
+    
+}
+
+.icons-problem{
+    background:url('all.png') 0px 0px no-repeat;
+    width:11px;
+    height:22px; 
+    position: absolute;
+}
+.icons-ok{
+    background:url('all.png') -11px 0px no-repeat;
+    width:21px;
+    height:22px;
+    position: absolute;
+}
+.icons-info{
+    background:url('all.png')  0px -36px no-repeat;
+    width:24px;
+    height:22px; 
+    position: absolute;
+}
+.icons-warning{
+    background:url('all.png')  0px -61px no-repeat;
+    width:23px;
+    height:22px; 
+    position: absolute;
+}

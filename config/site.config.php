@@ -1,0 +1,9 @@
+<?php
+define('SiteProtocol','http://');
+define('DefaultTemplate','default');
+define('CloseSiteForMaintenance',false);
+define('UseCache',false);
+define('CacheExpireTime',1800); 
+define('SetEmailFrom','');
+define('SetEmailName','');
+define('DefaultEncryptKey','12345667');

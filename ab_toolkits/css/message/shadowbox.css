@@ -1,0 +1,56 @@
+/* Alerts */
+.al-info, .al-success, .al-warning, .al-error, .al-validation ,.al-maintenance {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 60px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    border-radius: 5px;
+}
+.al-info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('shadowbox_images/info.png');
+    -moz-box-shadow: 0 0 1em #BDE5F8;
+    -webkit-box-shadow: 0 0 1em #BDE5F8;
+    box-shadow: 0 0 1em #BDE5F8; 
+}
+.al-success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('shadowbox_images/success.png');
+    -moz-box-shadow: 0 0 1em #a5d584;
+    -webkit-box-shadow: 0 0 1em #a5d584;
+    box-shadow: 0 0 1em #a5d584;     
+}
+.al-warning {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('shadowbox_images/error.png');
+    -moz-box-shadow: 0 0 1em #FFBABA;
+    -webkit-box-shadow: 0 0 1em #FFBABA;
+    box-shadow: 0 0 1em #FFBABA;     
+}
+.al-error {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('shadowbox_images/warning.png');
+    -moz-box-shadow: 0 0 1em #ecc86d;
+    -webkit-box-shadow: 0 0 1em #ecc86d;
+    box-shadow: 0 0 1em #ecc86d;     
+}
+
+.al-maintenance {
+    color: #9F6000;
+    background-color: #F8F3E4;
+    background-image: url('shadowbox_images/construction.gif');
+    -moz-box-shadow: 0 0 1em #F8F3E4;
+    -webkit-box-shadow: 0 0 1em #F8F3E4;
+    box-shadow: 0 0 1em #F8F3E4;     
+}
+
+.pengu_message_close{ 
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}

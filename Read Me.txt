@@ -1,0 +1,72 @@
+===========================
+ArcadeBooster Installation Guide
+===========================
+
+***************************
+System Requirements:
+
+PHP 5.3.0 or Higher
+Mysql (must support Mysqli)
+
+***************************
+Notice: If you are using a vps server or going to install ArcadeBooster script in a sub-folder (instead of /public_html/) you need to make a small change in .htaccess file "AFTER" installation. 
+In this case, you need to edit htaccess file and simply remove # sign before #RewriteBase  /
+
+
+
+Step #1: Downloading the Script
+Purchase and download ArcadeBoater script from arcadebooster.com or download limited version for free. 
+
+Step #2: Upload Zip File
+Upload the zip file to your root path of your website using FTP programs or cpanel.
+
+Step #3: Extract the Zip File
+Go to the cpanel of your site and extract the zipped file.
+Hint: You can also extract the zipped file in your computer first, then upload all files and folders to your website but as it contains too many files it may take too much time to upload.
+
+Step #4: Set Permissions
+Before you install the script, you'll asked to give write permission (777) to 2 folders. These folders are used for uploading content and temporary files for caching purposes.
+Make sure that these folders have 777 permission before you go to the next step:
+/content/
+/tmp/
+
+Step #5: Install the Script
+Your script is ready to install now. Go to this address in browser and start installation process:
+www.yourdomain.com/install/
+Replace yourdomain.com with your domain name. Once you press Enter, you'll see the welcome screen and you'll be asked to do the next steps.
+Hint: You can install a few sample games to see the script functionality but you can ignore adding sample data.
+
+Step #6: Delete Install Folder
+When the installation process got completed, you need to delete /install/ folder for security purposes. You will not need this folder any more so don't worry if you are asked to remove it from your website.
+Once you remove install folder, you can log in to your admin panel with the username and password you entered in previous steps.
+Your admin panel address is www.yourdomain.com/admin/
+
+Step #7: Set your Site Settings
+Before you start using your arcade site, it's recommended to set main settings of your site such as Site Title, Template, etc.
+You can access main settings from the "Configurations" menu in sidebar. Also don't forget to set seo settings for your site.
+
+Step #8: Add Categories
+Now it's the time to set your game categories. To define new categories, you just need to go to "Manage Categories" link from "Game Management" menu in your sidebar. Simply find "Add New Category" button and start adding your desired categories.
+
+Step #9: Add Games
+Adding game to ArcadeBooster script is very easy. There are different ways to add games. You can add games from "Manage Games" link or the shortcut you have in dashbaord to manage your games.
+You can also import our prepared games packages in the same menu and add 100's games with just a few clicks!
+
+Step #10: Set Cron Jobs
+To have updated stats and correct reports in your admin panel, you need to set a cron job in your site cpanel. Setting the cron job will reset your stats once a day and let you control all traffic you receive or send to partners.
+So without this, none of reports in admin panel work properly and you can not manage things correctly.
+To set the cron job, just login to your cpanel, go to cronjobs link and set the command below to run once a day (runs at 00:00 every day). 
+
+Command:
+wget --output-document=- http://www.yourdomain.com/admin/cjobs/manageablerun.html 
+
+Notice: this url will not be run directly from your browser!
+
+Step #11: Set Ad Zones
+To monetize your arcade site you need to add advertisemtns to your site. ArcadeBooster is provided with powerful advertising features and you can easily manage ads in your site.
+
+Step #12: Change the Logo of Your Site
+To change the logo, there's a PSD file in /images/ folder of your selected theme which you can edit it with "Adobe Photoshop" software and design your own logo. You can easily replace your new logo with the old one.
+
+Step #13: Enjoy your Arcade Site
+Almost done! You can start promoting your arcade site and enjoy the features we provided for you. :)

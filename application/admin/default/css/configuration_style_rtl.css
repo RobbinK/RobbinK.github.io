@@ -1,0 +1,17 @@
+dd,dt{padding: 5px 0;}
+dt lable{padding-left:4px ; }
+dt{font-weight: normal;width:300px !important;overflow: visible !important;padding-left: 10px;padding-top: 10px}
+dd textarea{width:280px}
+dd select{width:180px}
+dd a:not(.btn){
+    color: black !important;
+    display: inline-block;
+}
+dd a:not(.btn) :hover{
+    color: #058DC7;
+    text-decoration: none;
+} 
+
+span.green{
+    color: #14AF07; 
+}
