@@ -1,27 +1,44 @@
+/* General CSS (applies to all pages) */
+.clear {
+    display: none;
+}
 body {
     float: left;
     text-allign: center;
 }
+footer {
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:60px; 
+    padding-top: 15px;
+}
 
+/* Homepage */
 .games-list {
     display: block;
-    padding: 10px;
-    height: 500px;
-    width: fit-content;
-
+    height: auto;
+    width: auto;
 }
 .games-list li {
     float: left;
-    padding: 10px
-}
-.clear {
-    display: none;
+    padding: 10px;
 }
 
-footer {
-  text-allign: center;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
+/* Game Page */
+.game-page {
+    margin-left: 512px;
 }
+.button {
+    margin-left: 512px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button p:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
